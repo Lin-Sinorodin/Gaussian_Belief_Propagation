@@ -38,7 +38,10 @@ This project features two different notebooks, which provides the usage example:
    * Provide some useful analysis on the performance of the algorithm.
    * Check it out: 
    <div align="center">
+  
     <a href="https://colab.research.google.com/github/Lin-Sinorodin/Gaussian_Belief_Propagation/blob/master/notebooks/GaBP%20MRF.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+  [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/Lin-Sinorodin/Gaussian_Belief_Propagation/blob/master/notebooks/GaBP%20MRF.ipynb)
+  
     </div>
 2. `GaBP MRF Experiments.ipynb`:
     * This is the script I used for learning the algorithm before writing the optimized implementation.
@@ -46,5 +49,8 @@ This project features two different notebooks, which provides the usage example:
     * Provide summery of the theory, and comparison to the exact solution in comparison to the GaBP solution.
     * Check it out: 
    <div align="center">
+  
     <a href="https://colab.research.google.com/github/Lin-Sinorodin/Gaussian_Belief_Propagation/blob/master/notebooks/GaBP%20MRF%20Experiments.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+  [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/Lin-Sinorodin/Gaussian_Belief_Propagation/blob/master/notebooks/GaBP%20MRF%20Experiments.ipynb)
+  
     </div>
