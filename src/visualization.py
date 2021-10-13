@@ -1,4 +1,3 @@
-import numpy as np
 import networkx as nx
 from scipy import stats
 import matplotlib.pyplot as plt
@@ -13,9 +12,13 @@ def set_plot_options():
 
     plt.matplotlib.rc('figure', figsize=(9, 5))
     plt.matplotlib.rc('grid', linestyle='dashed', linewidth=1, alpha=0.25)
-    plt.matplotlib.rc('text', usetex=True)
     plt.matplotlib.rc('font', family='serif', size=12)
     plt.matplotlib.rc('legend', fontsize=12)
+
+    # Check if latex is installed. Source: https://stackoverflow.com/a/40895025
+    from distutils.spawn import find_executable
+    if find_executable('latex'):
+        plt.matplotlib.rc('text', usetex=True)
 
     # Change ticks
     plt.rcParams['xtick.major.size'] = 7.0
