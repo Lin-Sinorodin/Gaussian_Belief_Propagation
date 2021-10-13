@@ -1,5 +1,11 @@
 # Gaussian Belief Propagation using Markov Random Field
 
+<div align="center">
+  
+[![CodeFactor](https://www.codefactor.io/repository/github/lin-sinorodin/gaussian_belief_propagation/badge)](https://www.codefactor.io/repository/github/lin-sinorodin/gaussian_belief_propagation)
+
+</div>
+  
 An implementation of _Gaussian Belief Propagation_ (GABP) for 
 probabilistic inference on _Markov Random Field_ (MRF) - an 
 undirected graphical model.
