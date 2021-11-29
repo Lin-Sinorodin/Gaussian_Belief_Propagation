@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# Gaussian Belief Propagation using Markov Random Field
+  
+[![CodeFactor](https://www.codefactor.io/repository/github/lin-sinorodin/gaussian_belief_propagation/badge)](https://www.codefactor.io/repository/github/lin-sinorodin/gaussian_belief_propagation)
 
-You can use the [editor on GitHub](https://github.com/Lin-Sinorodin/Gaussian_Belief_Propagation/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+An implementation of _Gaussian Belief Propagation_ (GABP) for 
+probabilistic inference on _Markov Random Field_ (MRF) - an 
+undirected graphical model.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+> This code based on the thoery from [this thesis](https://arxiv.org/abs/0811.2518) by Danny Bickson. Check it out for 
+more information.
 
-### Markdown
+## Directory Structure
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+├─ notebooks
+│  ├─ GaBP MRF.ipynb
+│  └─ GaBP MRF Experiments.ipynb
+├─ src
+│  ├─ gabp_mrf.py
+│  ├─ synthetic_data.py
+│  ├─ utils.py
+│  └─ visualization.py
+├─ README.md
+└─ requirements.txt
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Usage Example
 
-### Jekyll Themes
+This project features two different notebooks, which provides the usage example:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Lin-Sinorodin/Gaussian_Belief_Propagation/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+1. `GaBP MRF.ipynb`:
+   * Based on the code from `src.gabp_mrf.py` which provides optimized implementation using [Numba](http://numba.pydata.org/).
+   * Provide usage example for most of the implemented features.
+   * Provide some useful analysis on the performance of the algorithm.
+   * Check it out: [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Lin-Sinorodin/Gaussian_Belief_Propagation/blob/master/notebooks/GaBP%20MRF.ipynb)
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+2. `GaBP MRF Experiments.ipynb`:
+    * This is the script I used for learning the algorithm before writing the optimized implementation.
+    * Provide details about the flow of the algorithm in each step, and should be easier to understand than the optimized implementation.
+    * Provide summery of the theory, and comparison to the exact solution in comparison to the GaBP solution.
+    * Check it out: [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Lin-Sinorodin/Gaussian_Belief_Propagation/blob/master/notebooks/GaBP%20MRF%20Experiments.ipynb)
